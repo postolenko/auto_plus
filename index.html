@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<link rel="stylesheet" type="text/css" href="style.css">	
+	<link rel="stylesheet" type="text/css" href="responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/select2.css">
+	<script type="text/javascript" src="vendors/js/jquery.js"></script>
+	<script type="text/javascript" src="slick/slick.js"></script>
+	<script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="vendors/js/smoothscroll.js"></script>
+	<script type="text/javascript" src="vendors/js/select2.js"></script>
+	<script type="text/javascript" src="vendors/js/jquery.maskedinput.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+	<!-- Header -->
+		
+	<header>
+
+		<div class="header-site">
+			<div class="row offset-ziro">
+				<div class="col-1 left">
+					<a href="#" class="logo">
+						<img src="img/logo.png" alt="" />
+					</a>
+				</div>
+				<div class="col-2 left align-center">
+					<div class="overflow_wrapp">
+						<div class="thumbnails-1">
+							<div class="thumb-1">
+								<div class="col-1">
+									<i class="auto"></i>
+								</div>
+								<div class="col-2">
+									<p class="p-1">Бесплатный выезд</p>
+									<p>по Москве и области</p>
+								</div>
+							</div>
+							<div class="thumb-1">
+								<div class="col-1">
+									<i class="clock"></i>
+								</div>
+								<div class="col-2">
+									<p class="p-1">Работаем без выходных</p>
+									<p>с 8.30 до 22.00</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-3 left align-right">
+					<a href="tel:84951234567" class="tel-link">8 (495) <span class="blue">123-45-67</span></a>
+				</div>
+			</div>
+		</div>
+								
+	</header>
+
+	<!-- /Header -->
+
+		<!-- Content -->
+			<div class="content">
+
+				<!-- Section 1 - Main Page -->
+
+				<section class="promo clip-polygon" id="promo">
+					
+					<div class="row">
+
+						<div class="promo-h">
+							<h1>Скрутим пробег Вашего авто</h1>
+							<p class="h1-desc">быстро, анонимно, без следов</p>
+						</div>
+
+						<div class="tree-cols three-cols_promo clearfix">
+							<div class="col-1 left">
+								<p>Заполните бланк<br /> <b>и узнайте стоимость</b> скрутки для вашего авто за 3 минуты!</p>
+								<div class="discount">
+									<p>При заполнении всех полей</p>
+									<p class="blue">Вы получите скидку 5%</p>
+								</div>
+							</div>
+							<div class="col-2 left">
+								<div class="form_wrapp promo-form">
+									<form>
+										<div class="form-title">
+											<h3>Узнайте стоимость скрутки<br /> за 3 шага и получите <b>скидку 5%</b></h3>
+											<span class="shape"></span>
+										</div>
+										<div class="steps-content-tabs">
+											<div class="step-content" data-index="1">
+												<div class="input_wrapp select_wrapp">
+													<select>
+														<option>Audi</option>
+														<option>Option 1</option>
+														<option>Option 2</option>
+														<option>Option 3</option>
+														<option>Option 4</option>
+													</select>
+												</div>
+												<div class="input_wrapp">
+													<input type="text" placeholder="Модель Авто" />
+												</div>
+												<div class="step_wrapp">
+													<button type="button" class="yellow-pill yellow-pill_2 next_step">
+														<span>Следующий шаг</span>
+													</button>
+												</div>
+											</div>
+											<div class="step-content" data-index="2">
+												<div class="input_wrapp">
+													<input type="text" placeholder="Какой пробег сейчас, км" />
+												</div>
+												<div class="input_wrapp">
+													<input type="text" placeholder="Какой пробег нужен, км" />
+												</div>
+												<div class="step_wrapp">
+													<button type="button" class="yellow-pill yellow-pill_2 next_step">
+														<span>Следующий шаг</span>
+													</button>
+												</div>
+												<div class="link_wrapp align-center">
+													<a href="#" class="back_link">К предыдущему шагу</a>
+												</div>
+											</div>
+											<div class="step-content" data-index="3">
+												<div class="input_wrapp">
+													<input type="tel" placeholder="Введите Ваш номер телефона" />
+												</div>
+												<div class="step_wrapp">
+													<button type="submit" class="yellow-pill">Рассчитать стоимость со скидкой</button>
+												</div>
+												<div class="link_wrapp align-center">
+													<a href="#" class="back_link">К предыдущему шагу</a>
+												</div>
+											</div>											
+										</div>										
+										<ol class="steps">
+											<li data-index="1">Шаг 1</li>
+											<li data-index="2">Шаг 2</li>
+											<li data-index="3">Шаг 3</li>
+										</ol>
+									</form>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</section>
+
+				<!-- /Section 1 - Main Page -->
+
+				<!-- Section 2 - Main Page -->
+
+				<section class="white-bg">
+					
+					<div class="row">
+
+						<div class="h2-box">
+							<h2>Корректируем пробег на любых ТС</h2>
+							<span class="shape_2"></span>
+							<p class="h2-desc">Выберите марку Вашего авто и узнайте стоимость скрутки пробега прямо сейчас</p>
+						</div>
+
+						<div class="thumbnails-2 offset-ziro">
+							<a href="#" class="thumb-2">
+								<img src="img/audi.png" alt="Audi">
+								<div class="mask">
+									<p>Audi</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/Bentley.png" alt="Audi">
+								<div class="mask">
+									<p>Bentley</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/BMW.png" alt="Audi">
+								<div class="mask">
+									<p>BMW</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/Cadillac.png" alt="Audi">
+								<div class="mask">
+									<p>Cadillac</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/Chevrolet.png" alt="Audi">
+								<div class="mask">
+									<p>Chevrolet</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/Chrysler.png" alt="Audi">
+								<div class="mask">
+									<p>Chrysler</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/Citroen.png" alt="Audi">
+								<div class="mask">
+									<p>Citroen</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/Daewoo.png" alt="Audi">
+								<div class="mask">
+									<p>Daewoo</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/Dodge.png" alt="Audi">
+								<div class="mask">
+									<p>Dodge</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/Fiat.png" alt="Audi">
+								<div class="mask">
+									<p>Fiat</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/Ford.png" alt="Audi">
+								<div class="mask">
+									<p>Ford</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/Great_Wall.png" alt="Audi">
+								<div class="mask">
+									<p>Great Wall</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/Honda.png" alt="Audi">
+								<div class="mask">
+									<p>Honda</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/Hyundai.png" alt="Audi">
+								<div class="mask">
+									<p>Hyundai</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/Infiniti.png" alt="Audi">
+								<div class="mask">
+									<p>Infiniti</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/Jaguar.png" alt="Audi">
+								<div class="mask">
+									<p>Jaguar</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/Jeep.png" alt="Audi">
+								<div class="mask">
+									<p>Jeep</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/Kia.png" alt="Audi">
+								<div class="mask">
+									<p>Kia</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/Land_Rover.png" alt="Audi">
+								<div class="mask">
+									<p>Land Rover</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/Lexus.png" alt="Audi">
+								<div class="mask">
+									<p>Lexus</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/Mazda.png" alt="Audi">
+								<div class="mask">
+									<p>Mazda</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/Mercedes.png" alt="Audi">
+								<div class="mask">
+									<p>Mercedes</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/Mini.png" alt="Audi">
+								<div class="mask">
+									<p>Mini</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/Mitsubishi.png" alt="Audi">
+								<div class="mask">
+									<p>Mitsubishi</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/Nissan.png" alt="Audi">
+								<div class="mask">
+									<p>Nissan</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/Opel.png" alt="Audi">
+								<div class="mask">
+									<p>Opel</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/Peugeot.png" alt="Audi">
+								<div class="mask">
+									<p>Peugeot</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/Porsche.png" alt="Audi">
+								<div class="mask">
+									<p>Porsche</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/Renault.png" alt="Audi">
+								<div class="mask">
+									<p>Renault</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/Saab.png" alt="Audi">
+								<div class="mask">
+									<p>Saab</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/Skoda.png" alt="Audi">
+								<div class="mask">
+									<p>Skoda</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/Ssang_Yong.png" alt="Audi">
+								<div class="mask">
+									<p>Ssang Yong</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/Subaru.png" alt="Audi">
+								<div class="mask">
+									<p>Subaru</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/Suzuki.png" alt="Audi">
+								<div class="mask">
+									<p>Suzuki</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/Toyota.png" alt="Audi">
+								<div class="mask">
+									<p>Toyota</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/Volkswagen.png" alt="Audi">
+								<div class="mask">
+									<p>Volkswagen</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/Volvo.png" alt="Audi">
+								<div class="mask">
+									<p>Volvo</p>
+								</div>
+							</a>
+							<a href="#" class="thumb-2">
+								<img src="img/vaz.png" alt="Audi">
+								<div class="mask">
+									<p>ВАЗ</p>
+								</div>
+							</a>
+						</div>
+
+					</div>
+
+				</section>
+
+				<!-- /Section 2 - Main Page -->
+
+				<!-- Section 3 - Main Page -->
+
+				<section class="sect-3 blue-bg">
+					
+					<div class="row">
+
+						<div class="h2-box">
+							<h2>Анонимные отзывы наши клиентов</h2>
+							<span class="shape_2"></span>
+						</div>
+
+						<div class="testimonials-slider_wrapp">
+							<div class="testimonials testimonials-slider">
+								<div class="slide">
+									<div class="testimonial">
+										<a href="#" class="inner">
+											<div class="img-box_wrapp">								
+												<div class="img-box">
+													<img src="img/car.jpg" alt="" />		
+												</div>
+											</div>
+											<div class="descript">
+												<div class="icon-box">
+													<i class="quotes"></i>
+												</div>
+												<div class="descript-txt">
+													<h3>BMW е39, 2002 г</h3>
+													<div class="two-cols_1">
+														<div class="col">
+															<p>Было: 23 600 км.</p>
+														</div>
+														<div class="col">
+															<p>Стало: 3 600 км.</p>
+														</div>
+													</div>
+													<div class="testimonial-desc">
+														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="testimonial">
+										<a href="#" class="inner">
+											<div class="img-box_wrapp">								
+												<div class="img-box">
+													<img src="img/car.jpg" alt="" />		
+												</div>
+											</div>
+											<div class="descript">
+												<div class="icon-box">
+													<i class="quotes"></i>
+												</div>
+												<div class="descript-txt">
+													<h3>BMW е39, 2002 г</h3>
+													<div class="two-cols_1">
+														<div class="col">
+															<p>Было: 23 600 км.</p>
+														</div>
+														<div class="col">
+															<p>Стало: 3 600 км.</p>
+														</div>
+													</div>
+													<div class="testimonial-desc">
+														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="testimonial">
+										<a href="#" class="inner">
+											<div class="img-box_wrapp">								
+												<div class="img-box">
+													<img src="img/car.jpg" alt="" />		
+												</div>
+											</div>
+											<div class="descript">
+												<div class="icon-box">
+													<i class="quotes"></i>
+												</div>
+												<div class="descript-txt">
+													<h3>BMW е39, 2002 г</h3>
+													<div class="two-cols_1">
+														<div class="col">
+															<p>Было: 23 600 км.</p>
+														</div>
+														<div class="col">
+															<p>Стало: 3 600 км.</p>
+														</div>
+													</div>
+													<div class="testimonial-desc">
+														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="testimonial">
+										<a href="#" class="inner">
+											<div class="img-box_wrapp">								
+												<div class="img-box">
+													<img src="img/car.jpg" alt="" />		
+												</div>
+											</div>
+											<div class="descript">
+												<div class="icon-box">
+													<i class="quotes"></i>
+												</div>
+												<div class="descript-txt">
+													<h3>BMW е39, 2002 г</h3>
+													<div class="two-cols_1">
+														<div class="col">
+															<p>Было: 23 600 км.</p>
+														</div>
+														<div class="col">
+															<p>Стало: 3 600 км.</p>
+														</div>
+													</div>
+													<div class="testimonial-desc">
+														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
+													</div>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</section>
+
+				<!-- /Section 3 - Main Page -->
+
+				<!-- Section 4 - Main Page -->
+
+				<section class="sect-4">
+					
+					<div class="row">
+
+						<div class="article-1 clearfix">
+							<div class="article-img">
+								<img src="img/photo_03.jpg" alt="" />
+							</div>	
+							<div class="article-2_content right">
+								
+								<div class="desc-item">
+									<div class="inner">
+										<p>Мы используем только проверенные методы</p>
+										<span class="tr"></span>
+									</div>
+								</div>
+								<div class="desc-item">
+									<div class="inner">
+										<p>Новейшее оборудование позволяет откорректировать пробег во всех блоках</p>
+										<span class="tr"></span>
+									</div>
+								</div>
+								<div class="desc-item">
+									<div class="inner">
+										<p>Скрутку невозможно обнаружить на СТО</p>
+										<span class="tr"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</section>
+
+				<!-- /Section 4 - Main Page -->
+
+				<!-- Section 5 - Main Page -->
+
+				<section class="white-bg">
+
+					<div class="h-box">
+						<div class="row">
+							<div class="col-1">
+								<i class="discuss"></i>
+							</div>
+							<div class="col-2">
+								<h2>Ответы на основные вопросы</h2>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="two-cols-2 clearfix">
+							<div class="left">
+								<div class="accordeon">
+									<div class="accordeon-item">
+										<div class="ac-title">
+											<h3>Сколько времени занимает скрутка пробега?</h3>
+										</div>
+										<div class="sliding-box">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bi  bendum laoreet.</p>
+										</div>
+									</div>
+									<div class="accordeon-item">
+										<div class="ac-title">
+											<h3>Эта процедура законна?</h3>
+										</div>
+										<div class="sliding-box">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bi  bendum laoreet.</p>
+										</div>
+									</div>
+									<div class="accordeon-item">
+										<div class="ac-title">
+											<h3>Безопасна ли данная процедура для авто?</h3>
+										</div>
+										<div class="sliding-box">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bi  bendum laoreet.</p>
+										</div>
+									</div>
+									<div class="accordeon-item">
+										<div class="ac-title">
+											<h3>Смогут ли отследить что пробег скручен?</h3>
+										</div>
+										<div class="sliding-box">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bi  bendum laoreet.</p>
+										</div>
+									</div>
+									<div class="accordeon-item">
+										<div class="ac-title">
+											<h3>От чего зависит стоимость скрутки?</h3>
+										</div>
+										<div class="sliding-box">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bi  bendum laoreet.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="right">
+								<div class="photo-box">
+									<div class="img-box">
+										<img src="img/automotive.jpg" alt="" />
+									</div>
+									<div class="descript">
+										<p class="p-1">Отвечает на вопросы:</p>
+										<p>директор, Хихич Евгений</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</section>
+
+				<!-- /Section 5 - Main Page -->
+
+				<!-- Section 6 - Main Page -->
+
+				<section class="sect-6">				
+
+					<div class="clip-polygon clip_2 bg">
+
+						<div class="row">
+
+							<div class="h2-box light">
+								<h2>Не рискуйте Вашим авто - доверьте скрутку нам!</h2>
+								<span class="shape_2"></span>
+								<p class="h2-desc">Мы откорректируем пробег Вашего авто безопасно и без следов</p>
+							</div>
+							<div class="form-two-cols_wrapp">
+								<div class="form-two-cols clearfix">
+									<div class="col">
+										<div class="input_wrapp transparent">
+											<input type="tel" placeholder="Введите Ваш номер телефона" name="">
+										</div>
+									</div>
+									<div class="col">
+										<buton type="submit" class="yellow-pill">Узнать цену скрутки</buton>
+									</div>							
+								</div>
+								<div class="checkbox">
+									<input type="checkbox" id="ch_1">
+									<label for="ch_1">Я согласен с <a href="#">политикой обработки персональных данных</a></label>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="map-title">
+							<div class="row">
+								<h3>Выезжаем к Вашему авто<br /> в любую точку Москвы</h3>
+							</div>
+						</div>
+
+					</div>
+
+					<div id="map"></div>
+
+				</section>
+
+				<!-- /Section 6 - Main Page -->
+
+				<!-- Section 7 - Main Page -->
+
+				<section class="white-bg">
+
+					<div class="h-box">
+						<div class="row">
+							<div class="col-1">
+								<i class="settings"></i>
+							</div>
+							<div class="col-2">
+								<h2>Скрутим пробег Вашего ТС быстро и без следов</h2>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row">
+
+						<div class="article-3 clearfix">
+							<div class="left">
+								<div class="desc-item blue-box">
+									<p>Узнайте стоимость прямо сейчас<br /> и получите скидку 5%!</p>
+									<p class="tr_shape smb">Гарантируем конфиденциальность!</p>
+									<span class="tr"></span>
+								</div>
+							</div>
+							<div class="right">
+								<div class="form_wrapp form_wrapp_2 bluelight-bg">
+									<form>
+										<div class="form-title">
+											<h3>Расчитаем стоимость <b>за 3 минуты</b></h3>
+											<span class="shape"></span>
+										</div>
+										<div class="input_wrapp">
+											<input type="tel" placeholder="Введите номер телефона" />
+										</div>
+										<div class="step_wrapp">
+											<button type="button" class="yellow-pill">
+												<span>Узнать цену со скидкой 5%</span>
+											</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</section>
+
+				<!-- /Section 7 - Main Page -->
+
+			</div>
+		<!-- /Content -->
+
+		<!-- Footer -->
+
+		<footer>
+
+			<div class="footer">
+				<div class="row offset-ziro">
+					<div class="col col-1">
+						<a href="#" class="logo">
+							<img src="img/logo.png" alt="" />
+						</a>
+					</div>
+					<div class="col col-2">
+						<p class="p-i"><i class="auto"></i>Выезжаем в любые регионы Москвы и Подмосковья</p>
+					</div>
+					<div class="col col-3">
+						<a href="tel:84951234567" class="tel-link">8 (495) <span class="blue">123-45-67</span></a>
+					</div>
+				</div>
+			</div>
+
+		</footer>
+
+		<!-- /Footer -->
+
+		<script src="js/scripts.js"></script>
+		<script src="js/additional_scripts.js"></script>
+		<script src="js/map.js"></script>
+	
+	</div>
+
+</body>
+</html>
