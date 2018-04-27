@@ -2049,3 +2049,223 @@ textarea:focus {
 .p-i i {
     margin: 4px 12px 0 0;
 }
+
+/*-- Popups --*/
+
+.popup_wrapp {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .4);
+    z-index: 15;
+}
+
+.popup {
+    display: block;
+    max-width: 567px;
+    margin: 90px auto 20px auto;
+    padding: 60px 5.5% 55px 5.5%;
+    border-width: 5px;
+    border-color: #d1d1d1;
+    border-style: solid;
+    position: relative;
+    background-color: #d1d1d1;
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    -webkit-box-shadow: 0 8px 17px .7px rgba(40, 14, 1, .17);
+    -moz-box-shadow: 0 8px 17px .7px rgba(40, 14, 1, .17);
+    box-shadow: 0 8px 17px .7px rgba(40, 14, 1, .17);
+}
+
+.popup:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 11, 21, .8);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.popup .inner {
+    position: relative;
+    z-index: 2;
+}
+
+.close-popup {
+    background-color: transparent;
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+    z-index: 12;
+    position: absolute;
+    top: -41px;
+    right: -60px;
+    background-image: url(img/close.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid transparent;
+}
+
+.popup .form-title h3 {
+    color: #ffffff;
+}
+
+.popup .checkbox {
+    margin: 9px 0;
+}
+
+/*-- /Popups --*/
+
+
+/*-- Animation --*/
+
+.leftSlice {
+    position: relative;
+    left: -3%;
+    opacity: 0;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-delay: .4s;
+    -webkit-transition-timing-function: ease-in-out;
+
+    -moz-transition-property: all;
+    -moz-transition-duration: 1s;
+    -moz-transition-delay: .4s;
+    -moz-transition-timing-function: ease-in-out;
+
+    -ms-transition-property: all;
+    -ms-transition-duration: 1s;
+    -ms-transition-delay: .4s;
+    -ms-transition-timing-function: ease-in-out;
+
+    -o-transition-property: all;
+    -o-transition-duration: 1s;
+    -o-transition-delay: .4s;
+    -o-transition-timing-function: ease-in-out;
+
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: .4s;
+    transition-timing-function: ease-in-out;
+}
+
+.animate.active .leftSlice {
+    left: 0;
+    opacity: 1;
+}
+
+.fadeIn {
+    opacity: 0;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-delay: .4s;
+    -webkit-transition-timing-function: ease-in-out;
+
+    -moz-transition-property: all;
+    -moz-transition-duration: 1s;
+    -moz-transition-delay: .4s;
+    -moz-transition-timing-function: ease-in-out;
+
+    -ms-transition-property: all;
+    -ms-transition-duration: 1s;
+    -ms-transition-delay: .4s;
+    -ms-transition-timing-function: ease-in-out;
+
+    -o-transition-property: all;
+    -o-transition-duration: 1s;
+    -o-transition-delay: .4s;
+    -o-transition-timing-function: ease-in-out;
+
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: .4s;
+    transition-timing-function: ease-in-out;
+}
+
+.animate.active .fadeIn {
+    opacity: 1;
+}
+
+.zoomFade {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-delay: .4s;
+    -webkit-transition-timing-function: ease-in-out;
+
+    -moz-transition-property: all;
+    -moz-transition-duration: 1s;
+    -moz-transition-delay: .4s;
+    -moz-transition-timing-function: ease-in-out;
+
+    -ms-transition-property: all;
+    -ms-transition-duration: 1s;
+    -ms-transition-delay: .4s;
+    -ms-transition-timing-function: ease-in-out;
+
+    -o-transition-property: all;
+    -o-transition-duration: 1s;
+    -o-transition-delay: .4s;
+    -o-transition-timing-function: ease-in-out;
+
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: .4s;
+    transition-timing-function: ease-in-out;
+}
+
+.animate.active .zoomFade {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+}
+
+.fadeInUp {
+    position: relative;
+    bottom: -20px;
+    opacity: 0;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-delay: .4s;
+    -webkit-transition-timing-function: ease-in-out;
+
+    -moz-transition-property: all;
+    -moz-transition-duration: 1s;
+    -moz-transition-delay: .4s;
+    -moz-transition-timing-function: ease-in-out;
+
+    -ms-transition-property: all;
+    -ms-transition-duration: 1s;
+    -ms-transition-delay: .4s;
+    -ms-transition-timing-function: ease-in-out;
+
+    -o-transition-property: all;
+    -o-transition-duration: 1s;
+    -o-transition-delay: .4s;
+    -o-transition-timing-function: ease-in-out;
+
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: .4s;
+    transition-timing-function: ease-in-out;
+}
+
+.animate.active .fadeInUp {
+    bottom: 0;
+    opacity: 1;
+}
+
+.opacity-img {
+    opacity: 0;
+}
+
+/*-- /Animation --*/
