@@ -27,7 +27,8 @@ $(window).load(function() {
 
     getTopPadding();
     getDescTrParams();
-    getPoligonBg();   
+    getPoligonBg();
+    getAnimation();
 
 });
 
@@ -37,6 +38,7 @@ $(window).resize(function() {
     getDescTrParams();
     getPoligonBg();
     getCenterPosition();
+    getAnimation();
 
     $("select").each(function() {
 
@@ -48,6 +50,12 @@ $(window).resize(function() {
 
     });
 
+});
+
+$(document).scroll(function() {
+
+    getAnimation();
+    
 });
 
 $(document).ready(function() {
@@ -309,5 +317,19 @@ function getCenterPosition() {
     $(".center").css({
         "margin-top" : topCoord + "px"
     });
+
+}
+
+function getAnimation() {
+
+  $(".animate").each(function() {
+
+    if( $(this).offset().top <= $(document).scrollTop() + $(window).height() ) {
+
+      $(this).addClass("active");
+
+    }
+
+  });  
 
 }

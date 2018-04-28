@@ -762,10 +762,6 @@ textarea:focus {
     color: #0bc3e3;
 }
 
-.tree-cols {
-
-}
-
 .promo-form input {
     background: transparent;
 }
@@ -773,20 +769,24 @@ textarea:focus {
 .three-cols_promo {
     margin-top: 20px;
     padding: 14px 0 105px 0;
-    background-image: url(img/promo_img.png);
+/*    background-image: url(img/promo_img.png);
     background-repeat: no-repeat;
-    background-position: 95.5% bottom;
+    background-position: 95.5% bottom;*/
 }
 
 .tree-cols .col-1 {
     width: 29%;
     padding-top: 111px;
     padding-right: 4%;
+    position: relative;
+    z-index: 2;
 }
 
 .tree-cols .col-2 {
     width: 61%;
     padding: 0 0 0 1%;
+    position: relative;
+    z-index: 2;
 }
 
 .tree-cols .col-1 p {
@@ -864,10 +864,6 @@ textarea:focus {
     position: absolute;
     bottom: -24px;
     left: 50%;
-}
-
-.steps-content-tabs {
-    /*margin-bottom: 18px;*/
 }
 
 .step-content {
@@ -1043,6 +1039,12 @@ textarea:focus {
 
 .steps li.active {
     opacity: 1;
+}
+
+.three-cols_promo .promo-img {
+    position: absolute;
+    bottom: 0;
+    right: 3%;
 }
 
 /*-- /Section 1 - Main Page --*/

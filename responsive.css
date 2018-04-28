@@ -39,7 +39,6 @@
 	.three-cols_promo {
 	    margin-top: 20px;
 	    padding: 14px 0 105px 0;
-	    background-image: none;
 	}
 
 	.tree-cols .col-1 {
@@ -55,6 +54,10 @@
 	.form_wrapp {
 		display: inline-block;
 		vertical-align: top;
+	}
+
+	.three-cols_promo .promo-img {
+		display: none;
 	}
 
 	/*-- /Section 1 - Main Page --*/
@@ -325,6 +328,11 @@
 
 	/*-- Section 1 - Main Page --*/
 
+	.promo {
+	    background-image: url(img/bg_resp.jpg);
+	    background-position: center;
+	}
+
 	.tree-cols .col-1 {
 	    width: 100%;
 	    padding-top: 20px;
@@ -344,7 +352,19 @@
 
 	/*-- /Section 1 - Main Page --*/
 
+	/*-- Section 4 - Main Page --*/
+
+	.sect-4 {
+	    background-image: url(img/bg_resp.jpg);
+	}
+
+	/*-- /Section 4 - Main Page --*/
+
 	/*-- Section 6 - Main Page --*/
+
+	.clip_2 {
+		background-image: url(img/bg_resp.jpg);
+	}
 
 	.form-two-cols .col {
 	    float: none;
@@ -362,6 +382,10 @@
 	/*-- /Section 6 - Main Page --*/
 
 	/*-- Success --*/
+
+	.success {
+	    background-image: url(img/bg_resp.jpg);
+	}
 
 	.success_message {
 	    padding: 33px 2% 35px 2%;
