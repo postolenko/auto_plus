@@ -2034,6 +2034,33 @@ textarea:focus {
     z-index: 2;
 }
 
+.success .center {
+    opacity: 0;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 1.4s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: all;
+    -moz-transition-duration: 1.4s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: all;
+    -ms-transition-duration: 1.4s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: all;
+    -o-transition-duration: 1.4s;
+    -o-transition-timing-function: ease;
+
+    transition-property: all;
+    transition-duration: 1.4s;
+    transition-timing-function: ease;
+}
+
+.success .center.active {
+    opacity: 1;
+}
+
 .success_message {
     max-width: 970px;
     margin: 0 auto;

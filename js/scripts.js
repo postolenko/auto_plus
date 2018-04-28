@@ -282,6 +282,8 @@ function getPoligonBg() {
 
 function getCenterPosition() {
 
+    $(".center").addClass("active");
+
     $(".parent_center").css({
         "padding-top" : $(".header-site").outerHeight() + "px"
     });
