@@ -38,6 +38,16 @@ $(window).resize(function() {
     getPoligonBg();
     getCenterPosition();
 
+    $("select").each(function() {
+
+        var parentBlock = $(this).closest(".select_wrapp");
+
+        parentBlock.find(".select2-container").css({
+            "width" : parentBlock.width() + "px"
+        });
+
+    });
+
 });
 
 $(document).ready(function() {
