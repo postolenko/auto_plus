@@ -55,7 +55,7 @@ $(window).resize(function() {
 $(document).scroll(function() {
 
     getAnimation();
-    
+
 });
 
 $(document).ready(function() {
@@ -303,14 +303,14 @@ function getCenterPosition() {
     $(".center").addClass("active");
 
     $(".parent_center").css({
-        "padding-top" : $(".header-site").outerHeight() + "px"
+        "padding-top" : $(".header-site").height() + "px"
     });
 
-    topCoord = ( $(window).height() - $(".center").height() ) / 2 - $(".header-site").height();
+    topCoord = ( $(window).height() - $(".header-site").height() - $(".center").height() ) / 2;
 
     if( topCoord <= $(".header-site").height() ) {
 
-        topCoord = 10;
+        topCoord = $(".header-site").height();
 
     }
 
