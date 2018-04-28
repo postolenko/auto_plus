@@ -9,8 +9,11 @@ var indexStep;
 var activeStep;
 var nextStepIndex;
 var activeLiStepAttr;
+var topCoord;
 
 $(window).load(function() {
+
+    getCenterPosition();
 
     $("select").each(function() {
 
@@ -24,7 +27,7 @@ $(window).load(function() {
 
     getTopPadding();
     getDescTrParams();
-    getPoligonBg();
+    getPoligonBg();   
 
 });
 
@@ -33,6 +36,7 @@ $(window).resize(function() {
     getTopPadding();
     getDescTrParams();
     getPoligonBg();
+    getCenterPosition();
 
 });
 
@@ -92,40 +96,43 @@ $(document).ready(function() {
 
     // -----------------------------------------
 
-    $(".steps-content-tabs .step-content").css({
-        "display" : "none"
-    });
+    if( $(".steps-content-tabs").length > 0 ) {
 
-    $(".steps-content-tabs .step-content").each(function() {
+        $(".steps-content-tabs .step-content").css({
+            "display" : "none"
+        });
 
-        if($(this).hasClass("active")) {
+        $(".steps-content-tabs .step-content").each(function() {
 
-            indexStep = $(this).attr("data-index");
+            if($(this).hasClass("active")) {
 
-            activeStep = $(this);
+                indexStep = $(this).attr("data-index");
 
-            return false;
+                activeStep = $(this);
 
-        } else {
+                return false;
 
-            parentBlock = $(this).closest(".steps-content-tabs");
+            } else {
 
-            activeStep = parentBlock.find(".step-content:eq(0)");
+                parentBlock = $(this).closest(".steps-content-tabs");
 
-            indexStep = activeStep.attr("data-index");
+                activeStep = parentBlock.find(".step-content:eq(0)");
 
-        }
+                indexStep = activeStep.attr("data-index");
 
-    });
+            }
 
-    activeStep.addClass("active");
+        });
 
-    activeStep.css({
-        "display" : "block"
-    })
+        activeStep.addClass("active");
 
-    $(".steps li[data-index = '"+ indexStep +"']").addClass("active");
+        activeStep.css({
+            "display" : "block"
+        })
 
+        $(".steps li[data-index = '"+ indexStep +"']").addClass("active");
+
+    }
 
     $(".next_step").click(function(e) {
 
@@ -268,6 +275,27 @@ function getPoligonBg() {
             "clip-path": "polygon(0 0, 100% 0, 100% "+ percentHeight +"%, 50% 100%, 0 "+ percentHeight +"%)"
         });
 
+    });
+
+}
+
+
+function getCenterPosition() {
+
+    $(".parent_center").css({
+        "padding-top" : $(".header-site").outerHeight() + "px"
+    });
+
+    topCoord = ( $(window).height() - $(".center").height() ) / 2 - $(".header-site").height();
+
+    if( topCoord <= $(".header-site").height() ) {
+
+        topCoord = 10;
+
+    }
+
+    $(".center").css({
+        "margin-top" : topCoord + "px"
     });
 
 }
