@@ -395,6 +395,10 @@
 	    padding: 6px 0;
 	}
 
+	.map {
+	    height: 500px;
+	}
+
 	/*-- /Section 6 - Main Page --*/
 
 	/*-- Success --*/
@@ -559,6 +563,10 @@
 	.map-title h3 {
 	    font-size: 26px;
 	    line-height: 40px;
+	}
+
+	.map {
+	    height: 450px;
 	}
 
 	/*-- /Section 6 - Main Page --*/

@@ -1942,9 +1942,12 @@ textarea:focus {
     color: #ffffff;
 }
 
-#map {
+.map {
     height: 100vh;
-    background: #ededed;
+    background-color: #ededed;
+    background-image: url(img/map.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 /*-- /Section 6 - Main Page --*/
