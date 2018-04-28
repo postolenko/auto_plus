@@ -2248,27 +2248,27 @@ textarea:focus {
     position: relative;
     left: -3%;
     opacity: 0;
-    -webkit-transition-property: all;
+    -webkit-transition-property: left, opacity;
     -webkit-transition-duration: 1s;
     -webkit-transition-delay: .4s;
     -webkit-transition-timing-function: ease-in-out;
 
-    -moz-transition-property: all;
+    -moz-transition-property: left, opacity;
     -moz-transition-duration: 1s;
     -moz-transition-delay: .4s;
     -moz-transition-timing-function: ease-in-out;
 
-    -ms-transition-property: all;
+    -ms-transition-property: left, opacity;
     -ms-transition-duration: 1s;
     -ms-transition-delay: .4s;
     -ms-transition-timing-function: ease-in-out;
 
-    -o-transition-property: all;
+    -o-transition-property: left, opacity;
     -o-transition-duration: 1s;
     -o-transition-delay: .4s;
     -o-transition-timing-function: ease-in-out;
 
-    transition-property: all;
+    transition-property: left, opacity;
     transition-duration: 1s;
     transition-delay: .4s;
     transition-timing-function: ease-in-out;
@@ -2281,27 +2281,27 @@ textarea:focus {
 
 .fadeIn {
     opacity: 0;
-    -webkit-transition-property: all;
+    -webkit-transition-property: opacity;
     -webkit-transition-duration: 1s;
     -webkit-transition-delay: .4s;
     -webkit-transition-timing-function: ease-in-out;
 
-    -moz-transition-property: all;
+    -moz-transition-property: opacity;
     -moz-transition-duration: 1s;
     -moz-transition-delay: .4s;
     -moz-transition-timing-function: ease-in-out;
 
-    -ms-transition-property: all;
+    -ms-transition-property: opacity;
     -ms-transition-duration: 1s;
     -ms-transition-delay: .4s;
     -ms-transition-timing-function: ease-in-out;
 
-    -o-transition-property: all;
+    -o-transition-property: opacity;
     -o-transition-duration: 1s;
     -o-transition-delay: .4s;
     -o-transition-timing-function: ease-in-out;
 
-    transition-property: all;
+    transition-property: opacity;
     transition-duration: 1s;
     transition-delay: .4s;
     transition-timing-function: ease-in-out;
@@ -2316,27 +2316,27 @@ textarea:focus {
     -moz-transform: scale(0);
     transform: scale(0);
     opacity: 0;
-    -webkit-transition-property: all;
+    -webkit-transition-property: opacity, transform;
     -webkit-transition-duration: 1s;
     -webkit-transition-delay: .4s;
     -webkit-transition-timing-function: ease-in-out;
 
-    -moz-transition-property: all;
+    -moz-transition-property: opacity, transform;
     -moz-transition-duration: 1s;
     -moz-transition-delay: .4s;
     -moz-transition-timing-function: ease-in-out;
 
-    -ms-transition-property: all;
+    -ms-transition-property: opacity, transform;
     -ms-transition-duration: 1s;
     -ms-transition-delay: .4s;
     -ms-transition-timing-function: ease-in-out;
 
-    -o-transition-property: all;
+    -o-transition-property: opacity, transform;
     -o-transition-duration: 1s;
     -o-transition-delay: .4s;
     -o-transition-timing-function: ease-in-out;
 
-    transition-property: all;
+    transition-property: opacity, transform;
     transition-duration: 1s;
     transition-delay: .4s;
     transition-timing-function: ease-in-out;
@@ -2353,27 +2353,27 @@ textarea:focus {
     position: relative;
     bottom: -20px;
     opacity: 0;
-    -webkit-transition-property: all;
+    -webkit-transition-property: bottom, opacity;
     -webkit-transition-duration: 1s;
     -webkit-transition-delay: .4s;
     -webkit-transition-timing-function: ease-in-out;
 
-    -moz-transition-property: all;
+    -moz-transition-property: bottom, opacity;
     -moz-transition-duration: 1s;
     -moz-transition-delay: .4s;
     -moz-transition-timing-function: ease-in-out;
 
-    -ms-transition-property: all;
+    -ms-transition-property: bottom, opacity;
     -ms-transition-duration: 1s;
     -ms-transition-delay: .4s;
     -ms-transition-timing-function: ease-in-out;
 
-    -o-transition-property: all;
+    -o-transition-property: bottom, opacity;
     -o-transition-duration: 1s;
     -o-transition-delay: .4s;
     -o-transition-timing-function: ease-in-out;
 
-    transition-property: all;
+    transition-property: bottom, opacity;
     transition-duration: 1s;
     transition-delay: .4s;
     transition-timing-function: ease-in-out;
