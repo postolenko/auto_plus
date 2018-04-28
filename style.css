@@ -2067,7 +2067,7 @@ textarea:focus {
     z-index: 2;
 }
 
-/*.success .center {
+.success .center {
     opacity: 0;
     -webkit-transition-property: all;
     -webkit-transition-duration: 1.4s;
@@ -2092,7 +2092,7 @@ textarea:focus {
 
 .success .center.active {
     opacity: 1;
-}*/
+}
 
 .success_message {
     max-width: 970px;
