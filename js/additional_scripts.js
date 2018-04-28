@@ -9,7 +9,7 @@ $(document).ready(function() {
 	$(".testimonials-slider").not(".slick-initialized").slick({
         dots: true,
         arrows: true,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 5000,
         speed: 1200,
         slidesToShow: 3,

@@ -89,6 +89,14 @@
 
 	/*-- /Section 3 - Main Page --*/
 
+	/*-- Popup --*/
+
+	.popup_form {
+		display: block;
+	}
+
+	/*-- /Popup --*/
+
 }
 
 @media only screen and (max-width: 1024px) {

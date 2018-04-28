@@ -248,6 +248,18 @@ $(document).ready(function() {
 
     });
 
+    // -----------------
+
+    $(".thumb-2").click(function(e) {
+
+        e.preventDefault();
+
+        var markName = $(this).find(".mask p").text();
+
+        $("#mark").text(markName);
+
+    });
+
 });
 
 

@@ -270,14 +270,6 @@ h2 {
     color: #202c45
 }
 
-h3 {
-
-}
-
-h4 {
-
-}
-
 p {
     font-family: "Open Sans", "Arial", "verdana", sans-serif;
     font-size: 16px;
@@ -732,6 +724,7 @@ textarea:focus {
 /*-- Section 1 - Main Page --*/
 
 .promo {
+    padding-bottom: 0;
     position: relative;
     background-color: #000b15;
     background-image: url(img/promo_bg.jpg);
@@ -1863,6 +1856,8 @@ textarea:focus {
 }
 
 .checkbox label {
+    display: inline-block;
+    vertical-align: top;
     position: relative;
     padding-left: 30px;
     cursor: pointer;
