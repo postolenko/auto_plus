@@ -127,6 +127,14 @@
 
 	/*-- /Section 1 - Main Page --*/
 
+	/*-- Popup --*/
+
+	.popup_form {
+		padding-top: 53px;
+	}
+
+	/*-- /Popup  --*/
+
 }
 
 @media only screen and (max-width: 900px) {

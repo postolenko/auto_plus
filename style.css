@@ -2223,8 +2223,8 @@ textarea:focus {
     cursor: pointer;
     z-index: 12;
     position: absolute;
-    top: -41px;
-    right: -60px;
+    top: 18px;
+    right: 4%;
     background-image: url(img/close.svg);
     background-repeat: no-repeat;
     background-position: center;
